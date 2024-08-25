@@ -28,12 +28,12 @@ class AdventuresList extends Component {
         return null;
       }
       return response.json();
-    }).then((filmsData) => {
-      if (!filmsData?.data?.allFilms?.films) {
+    }).then((adventuresData) => {
+      if (!adventuresData?.data?.adventuresList?.items) {
         return null;
       }
 
-      return filmsData?.data?.allFilms?.films;
+      return adventuresData?.data?.adventuresList?.items;
     }).then((data) => {
       this.setState({
         loading: false,
