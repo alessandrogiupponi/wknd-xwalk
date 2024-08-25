@@ -29,11 +29,11 @@ class AdventuresList extends Component {
       }
       return response.json();
     }).then((adventuresData) => {
-      if (!adventuresData?.data?.adventuresList?.items) {
+      if (!adventuresData?.data?.adventureList?.items) {
         return null;
       }
 
-      return adventuresData?.data?.adventuresList?.items;
+      return adventuresData?.data?.adventureList?.items;
     }).then((data) => {
       this.setState({
         loading: false,
