@@ -1,9 +1,7 @@
-// eslint-disable-next-line import/no-unresolved
-import { h, render } from 'https://esm.sh/preact';
-// eslint-disable-next-line import/no-unresolved
-import htm from 'https://esm.sh/htm';
+import { h, render } from '../../scripts/preact.js';
+import htm from '../../scripts/htm.js';
 import { readBlockConfig } from '../../scripts/aem.js';
-import { AdventuresList } from './AdventuresList.js';
+import AdventuresList from './AdventuresList.js';
 
 const html = htm.bind(h);
 

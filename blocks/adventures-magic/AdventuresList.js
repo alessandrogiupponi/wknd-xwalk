@@ -1,7 +1,6 @@
 // eslint-disable-next-line import/no-unresolved
-import { h, Component } from 'https://esm.sh/preact';
-// eslint-disable-next-line import/no-unresolved
-import htm from 'https://esm.sh/htm';
+import { h, Component } from '../../scripts/preact.js';
+import htm from '../../scripts/htm.js';
 import AdventureItem from './AdventureItem.js';
 
 const html = htm.bind(h);
