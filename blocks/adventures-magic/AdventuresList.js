@@ -4,12 +4,13 @@ import htm from '../../scripts/htm.js';
 import AdventureItem from './AdventureItem.js';
 
 const html = htm.bind(h);
+const REACT_APP_DEFAULT_AUTHOR_HOST = process.env;
 
 export async function performQuery() {
   const headers = {
     Authorization: `Basic ${btoa('admin:admin')}`,
   };
-  return fetch('https://author-p117303-e1145208.adobeaemcloud.com/graphql/execute.json/wknd/adventures-all', {
+  return fetch(`${REACT_APP_DEFAULT_AUTHOR_HOST}graphql/execute.json/wknd/adventures-all`, {
   // return fetch('https://localhost:8443/graphql/execute.json/wknd/adventures-all', {
     method: 'GET',
     headers,
