@@ -3,7 +3,6 @@ import { h, Component } from '../../scripts/preact.js';
 import htm from '../../scripts/htm.js';
 
 const html = htm.bind(h);
-const REACT_APP_DEFAULT_AUTHOR_HOST = process.env;
 
 class AdventureItem extends Component {
   constructor(props) {
@@ -22,7 +21,7 @@ class AdventureItem extends Component {
     const imagePath = this.adventurePrimaryImage._path;
     return html`<div class="adventure-item">
             <div class="adventure-image-card" >
-                <img class="adventure-item-image" src="${REACT_APP_DEFAULT_AUTHOR_HOST}${imagePath}" />
+                <img class="adventure-item-image" src="https://author-p117303-e1145208.adobeaemcloud.com${imagePath}" />
                 <div class="adventure-item-price">${this.adventurePrice}</div> 
             </div>
             <div class="adventure-item-title"><p>${this.adventureTitle}</p></div>
