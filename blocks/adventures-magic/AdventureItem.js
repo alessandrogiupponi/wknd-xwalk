@@ -14,12 +14,18 @@ class AdventureItem extends Component {
     // eslint-disable-next-line no-underscore-dangle
     this.path = props.adventure._path;
     this.slug = props.adventure.slug;
+    this.editorProps = {
+      'data-aue-resource': `urn:aemconnection:${this.path}/jcr:content/data/master`,
+      'data-aue-type': 'reference',
+      'data-aue-filter': 'cf',
+      'data-aue-label': this.adventureTitle,
+    };
   }
 
   render() {
     // eslint-disable-next-line no-underscore-dangle
     const imagePath = this.adventurePrimaryImage._path;
-    return html`<div class="adventure-item">
+    return html`<div class="adventure-item" ...${this.editorProps}>
             <div class="adventure-image-card" >
                 <img class="adventure-item-image" src="https://author-p117303-e1145208.adobeaemcloud.com${imagePath}" />
                 <div class="adventure-item-price">${this.adventurePrice}</div> 
