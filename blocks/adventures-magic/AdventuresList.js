@@ -7,6 +7,7 @@ const html = htm.bind(h);
 
 export async function performQuery() {
   const headers = {
+    credentials: 'include',
     Authorization: `Basic ${btoa('admin:admin')}`,
   };
   return fetch('https://author-p117303-e1145208.adobeaemcloud.com/graphql/execute.json/wknd/adventures-all', {
