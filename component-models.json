@@ -3,6 +3,18 @@
     "id": "navigation",
     "fields": [
       {
+        "component": "select",
+        "name": "cq:styleIds",
+        "value": "",
+        "label": "Template Styles",
+        "valueType": "string",
+        "options": [
+          { "name": "None", "value": "" },
+          { "name": "Header", "value": "1568591750865" },
+          { "name": "Footer", "value": "1568591758631" }
+        ]
+      },
+      {
         "component": "aem-content",
         "valueType": "string",
         "name": "navigationRoot",
