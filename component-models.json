@@ -3,7 +3,7 @@
     "id": "navigation",
     "fields": [
       {
-        "component": "reference",
+        "component": "aem-content",
         "valueType": "string",
         "name": "navigationRoot",
         "label": "Navigation Root",
