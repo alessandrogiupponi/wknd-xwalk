@@ -1,31 +1,5 @@
 [
   {
-    "id": "navigation",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "navigationRoot",
-        "label": "Navigation Root",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "structureDepth",
-        "value": "",
-        "label": "Navigation Structure Depth"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "structureStart",
-        "value": "",
-        "label": "Exclude Root Levels"
-      }
-    ]
-  },
-  {
     "id": "title",
     "fields": [
       {
