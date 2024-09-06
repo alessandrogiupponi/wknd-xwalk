@@ -77,6 +77,22 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Navigation",
+          "id": "navigation",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "wknd/components/navigation",
+                "template": {
+                  "navigationRoot": "/content/wknd/language-masters/en",
+                  "structureDepth": 1,
+                  "structureStart": 0
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Columns",
           "id": "columns",
           "plugins": {
