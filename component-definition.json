@@ -84,6 +84,8 @@
               "page": {
                 "resourceType": "wknd/components/navigation",
                 "template": {
+                  "name": "Navigation",
+                  "model": "navigation",
                   "navigationRoot": "/content/wknd/language-masters/en",
                   "structureDepth": 1,
                   "structureStart": 0
