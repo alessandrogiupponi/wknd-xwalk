@@ -77,6 +77,21 @@
       "id": "blocks",
       "components": [
         {
+          "title": "WKND Hero",
+          "id": "wknd-hero",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "wknd/components/block",
+                "template": {
+                  "name": "WKND Hero",
+                  "model": "wknd-hero"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Navigation",
           "id": "navigation",
           "plugins": {
