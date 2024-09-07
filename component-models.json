@@ -6,7 +6,7 @@
         "component": "boolean",
         "label": "Collect All Pages",
         "name": "collectAllPages",
-        "valueType": "boolean"
+        "valueType": "boolean",
         "value": false
       },
       {
